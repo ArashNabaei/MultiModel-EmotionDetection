@@ -22,6 +22,4 @@ train_data, test_data = load_data(dataset_path)
 
 # print(data.columns)
 
-encoded_train, encoded_test = tokenize_data(train_data, test_data)
-
-print(encoded_test[1 : 3])
+# encoded_train, encoded_test = tokenize_data(train_data, test_data)
