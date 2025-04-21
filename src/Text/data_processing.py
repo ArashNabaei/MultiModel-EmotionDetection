@@ -6,7 +6,7 @@ dataset_path = 'D:/Personal/University/کارشناسی/Project/Implementation/M
 
 def load_data(data_path):
     data = pd.read_csv(data_path)
-    return train_test_split(data, train_size=0.8)
+    return train_test_split(data, train_size=0.8, stratify=data['label'])
 
 def tokenize_data(train_data, test_data):
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
