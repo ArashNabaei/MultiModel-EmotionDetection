@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from transformers import BertTokenizer
 
-dataset_path = 'D:/Personal/University/کارشناسی/Project/Implementation/data/text/emotions.csv'
+dataset_path = 'D:/Personal/University/کارشناسی/Project/Implementation/MultiModel-EmotionDetection/data/text/emotions.csv'
 
 def load_data(data_path):
     data = pd.read_csv(data_path)
