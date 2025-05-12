@@ -14,6 +14,10 @@ def tokenize_data(train_data, test_data):
     test_encodings = tokenizer(list(test_data['text']), padding=True, truncation=True, max_length=128)
     return train_encodings, test_encodings
 
+def get_tokenizer():
+    return BertTokenizer.from_pretrained('bert-base-uncased')
+
+
 data = pd.read_csv(dataset_path)
 
 train_data, test_data = load_data(dataset_path)
