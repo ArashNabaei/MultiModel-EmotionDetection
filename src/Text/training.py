@@ -51,3 +51,8 @@ for epoch in range(epochs):
 
     avg_loss = total_loss / len(train_loader)
     print(f"Epoch {epoch+1} complete! Avg loss: {avg_loss:.4f}")
+
+model.save_pretrained("saved_model/")
+tokenizer = dp.get_tokenizer()
+tokenizer.save_pretrained("saved_model/")
+
